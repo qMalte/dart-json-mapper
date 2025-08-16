@@ -19,3 +19,5 @@ dependencies:
 dev_dependencies:
   lints:
   build_runner:
+dependency_overrides:
+  analyzer: ^4.3.0
