@@ -4,6 +4,22 @@
 [![Pub Points](https://img.shields.io/pub/points/dart_json_mapper)](https://pub.dev/packages/dart_json_mapper/score)
 [![Popularity](https://img.shields.io/pub/popularity/dart_json_mapper)](https://pub.dev/packages/dart_json_mapper/score)
 
+## Fork-spezifische Änderungen
+
+Dieser Fork behebt Kompatibilitätsprobleme mit neueren Dart SDK-Versionen:
+- Begrenzt `analyzer` auf Versionen < 6.6.0 (vor Macro-Dependencies)
+- Kompatibel mit Dart 3.7+ ohne Macro-Konflikte
+- Funktioniert mit aktuellen Flutter-Versionen
+
+### Migration von Original
+```yaml
+dependencies:
+  dart_json_mapper:
+    git:
+      url: https://github.com/qMalte/dart-json-mapper
+      ref: master
+```
+
 This package allows programmers to annotate Dart objects in order to
   Serialize / Deserialize them to / from JSON.
   
